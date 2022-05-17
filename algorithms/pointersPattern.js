@@ -12,3 +12,20 @@ const sumZero = (arr) => {
         }
     }
 }
+
+const countUniqueValues = (arr) => {
+
+    let i = 0;
+    let j = 1;
+
+    while (j < arr.length - 1) {
+        if (arr[i] === arr[j]) {
+            arr.splice(j,1);
+        } else if (arr[i] !== arr[j]) {
+            i++;
+            j++;
+        }
+    }
+    return arr.length;
+
+}
