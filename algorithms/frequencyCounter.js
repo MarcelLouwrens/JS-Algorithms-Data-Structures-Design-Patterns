@@ -24,7 +24,7 @@ const same = (arr1, arr2) => {
     let counter2 = {};
 
     for(let val of arr1){
-        counter[val] = (counter[val] || 0) + 1;
+        counter1[val] = (counter1[val] || 0) + 1;
     }
     for(let val of arr2){
         counter2[val] = (counter2[val] || 0) + 1;
@@ -50,7 +50,7 @@ const anagram = (arr1, arr2) => {
     let counter2 = {};
 
     for(let val of arr1){
-        counter[val] = (counter[val] || 0) + 1;
+        counter1[val] = (counter1[val] || 0) + 1;
     }
     for(let val of arr2){
         counter2[val] = (counter2[val] || 0) + 1;
